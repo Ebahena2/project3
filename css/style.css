@@ -85,8 +85,8 @@
  }
  
 body {
-  background-color: #FCFBF4;
   margin: 0px;
+  background-color: #FCFBF4;
 }
 
 
@@ -136,7 +136,7 @@ body {
   }
   
   .niagracss {
-    float: none;
+    float: left;
     border: 1px;
     margin: 1rem;
     padding: 2rem 2rem;
@@ -206,62 +206,156 @@ body {
 #hobby-body p {
   font-size: 13px;
 }
-
-#video {
-  height: 250px;
-  width: 350px;
-}
-
 #soccermain {
-  border: 1px;
-  
+ background-color: white;
+ float: left;
+ width: 33%;
+ margin: 10px;
+ box-shadow: 0px 4px 2px rgba(0,0,0,1);
+ border-radius: 50px 50px 50px 50px;
+ padding: 10px;
 }
 
 #soccerinfo {
-  width: 50%;
+  width: 100%;
   float: left;
   padding: 10px;
-  border-right: 1px;
 }
 
-#soccerpic {
-  margin-left: 50%;
-  border-left: 1px;
-  padding: 10px;
-  line-height: 2em;
+
+#soccervid {
+  position:relative;
+  padding-bottom: 50%;
+  padding-top: 25px;
+  height: 0;
+}
+
+#divforvid {
+  float: left;
+  width: 100%;
+  
+}
+
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
 }
 
 #moviecss {
-  width: 50%;
+ background-color: white;
+ float: left;
+ width: 25%;
+ margin: 10px;
+ box-shadow: 0px 4px 2px rgba(0,0,0,1);
+ border-radius: 50px 50px 50px 50px;
+ padding: 10px;
+}
+
+#movieinfo {
+  width: 100%;
   float: left;
   padding: 10px;
-  border-right: 1px;
 }
 
 #gamecss {
-  margin-left: 50%
-  border-left: 1px;
-  padding: 10px;
-  line-height: 2em;
+ background-color: white;
+ float: left;
+ width: 33%;
+ margin: 10px;
+ box-shadow: 0px 4px 2px rgba(0,0,0,1);
+ border-radius: 50px 50px 50px 50px;
+ padding: 10px;
 }
 
-
-
-
-footer {
+#gameinfo {
   width: 100%;
-  position: relative;
+  float: left;
+  padding: 10px;
+  vertical-align: center;
+}
+
+#wrapper {
+  width: 850px;
+  height: 600px;
+  background-color: blue;
+  margin: 0 auto;
   overflow: hidden;
-  text-align: center;
-  background-color: #27445C;
-  color: white;
+}
+
+#canvas{
+  width: 700px;
+  height: 500px;
+  background-color: red;
+  margin: 30px auto;
+}
+
+@media (min-width: 0px){
+  #infocss h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  #infocss p {
+    font-size: 15px
+  }
+  #excss p {
+    font-size: 13px;
+  }
+  body ul li{
+    font-size: 15px;
+  }
+  body ol {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px){
+  #infocss h1{
+    font-size: 25px;
+  }
+  h2{
+    font-size: 35px;
+  }
+  #infocss p {
+    font-size: 20px
+  }
+  #excss p {
+    font-size: 17px;
+  }
+  body ul li{
+    font-size: 20px;
+  }
+  body ol {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px){
+  #infocss h1{
+    font-size: 35px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  #infocss h1{
+    font-size: 30px;
+  }
+  #infocss p {
+    font-size: 25px
+  }
+  #excss p {
+    font-size: 23px;
+  }
+  body ul li{
+    font-size: 25px;
+  }
+  body ol {
+    font-size: 25px;
+  }
 }
 
 
-footer p {
-  font-size: 14px;
-  margin: 1px;
-  padding: 1px;
-}
-  
-  
