@@ -335,9 +335,6 @@ iframe{
 }
 
 @media (min-width: 1200px){
-  #infocss h1{
-    font-size: 35px;
-  }
   h2{
     font-size: 40px;
   }
