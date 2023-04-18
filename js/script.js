@@ -22,6 +22,7 @@ function init(){
     animation: google.maps.Animation.DROP,
     icon: 'media/eiffeltower.jpg'
   });
+  marker.addListener('click', toggleBounce);
   
   var contentString= '<h1>Eiffel Tower</h1><p>The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.</p>';
   
@@ -35,7 +36,13 @@ function init(){
     infowindow.open(myMap, marker);
   });
   
- 
+ function toggleBounce(){
+   if(marker.getAnimation() !==null){
+     marker.setAnimation(null);
+   }else {
+     marker.setAnimation(google.maps.Animation.BOUNCE);
+   }
+ }
   
   
 }
