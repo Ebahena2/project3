@@ -1,13 +1,25 @@
-let map;
-
-async function initMap() {
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+function init(){
+  
+  var el = document.getElementById('canvas');
+  var myLocation = new google.maps.LatLng(48.858241991407624, 2.2944583877067566);
+  var mapOptions = {
+    center: myLocation, 
+    zoom: 18,
+    mapTypeId: google.maps.MapTypeId.SATELLITE,
+    mapTypeControlOptions: {
+      position: google.maps.ControlPosition.BOTTOM_CENTER
+    }
+  };
+  
+  var myMap = new google.maps.Map(el, mapOptions);
+  
+  var marker = new google.maps.Marker({
+    position: myLocation,
+    map: myMap,
+    icon: 'eiffeltower.jpg'
   });
+  
+  
+  
 }
-
-initMap();
+google.maps.event.addDomListener(window, 'load', init);
