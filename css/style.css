@@ -282,13 +282,14 @@ iframe{
   height: 600px;
   background-color: blue;
   margin: 0 auto;
+
   overflow: hidden;
 }
 
 #canvas{
   width: 700px;
   height: 500px;
-  background-color: red;
+  background-color: white;
   margin: 30px auto;
 }
 

@@ -16,7 +16,7 @@ function init(){
   var marker = new google.maps.Marker({
     position: myLocation,
     map: myMap,
-    icon: 'eiffeltower.jpg'
+    icon: 'media/eiffeltower.jpg'
   });
   
   
